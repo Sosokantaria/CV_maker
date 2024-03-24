@@ -1,34 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { CvFormSection } from "./sections/cv_form_section"
+import { CvPdfFileSection } from "./sections/cv_pdf_file_section"
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <form >
+    <div className="bg-[#000] w-full h-[862px] flex justify-around  ">
+      <div className="w-[35%] h-[852px] mt-[10px] flex">
+        <CvFormSection />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div className=" w-[595px] h-[842px] my-[10px] rounded-lg ">
+        <CvPdfFileSection />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
+  </form>
   )
 }
 
