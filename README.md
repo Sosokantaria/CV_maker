@@ -7,7 +7,6 @@ Welcome to our CV Maker app! This application is designed to help users effortle
 - **Multiple Sections:** Users can fill in various sections including personal information, education, work experience, skills, etc., ensuring a comprehensive and detailed CV.
 - **Real-time Preview:** As users input their information, they can see a real-time preview of their CV, ensuring they can make adjustments as needed.
 - **Download as PDF:** Once all sections are filled, users can download their CV as a PDF file with just a click of a button.
-- **Responsive Design:** The app is built with responsiveness in mind, ensuring a seamless experience across different devices and screen sizes.
 
 ## Getting Started
 To get started with our CV Maker app, simply follow these steps:
