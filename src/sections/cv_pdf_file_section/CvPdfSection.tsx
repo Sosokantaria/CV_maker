@@ -11,40 +11,41 @@ import { EducationInfo } from "./sections/educationalInfo";
 
 export function CvPdfFileSection() {
   const { personalData } = useContext(Context);
+  const { name, lastName, city, number, mail, github, linkdin } = personalData;
   return (
-    <div className="bg-[#fefefe] w-full h-full rounded-lg flex flex-col">
-       <div className="flex flex-col h-[10vh] items-center">
+    <div className="bg-[#fefefe] w-[803px] h-[1132px] rounded-lg flex flex-col">
+       <div className="flex flex-col h-[10vh] items-center w-full">
         <div className=" text-black h-[6vh] flex items-center gap-2 ">
           <h1 className="text-[#2e2e2e] font-[700] text-[21px] tracking-[8px]">
-            {personalData.name}
+          {name ? name.toUpperCase() : ""}
           </h1>
           <h1 className="text-[#2e2e2e] font-[700] text-[21px] tracking-[8px]">
-            {personalData.lastName}
+          {lastName ? lastName.toUpperCase() : ""}
           </h1>
         </div>
         <div className="flex gap-3">
           <div className="flex gap-1 items-center text-[black] cursor-pointer font-[400] text-[12px]">
             <SlLocationPin size="12px" />
-            {personalData.city}
+            {city ? city.toUpperCase() : ""}
           </div>
           <div className="flex gap-1 items-center text-[black] cursor-pointer font-[400] text-[12px]">
             <FiPhone size="12px" />
-            {personalData.number}
+            {number}
           </div>
           <div className="flex gap-1 items-center text-[black] cursor-pointer font-[400] text-[12px]">
             <MdAlternateEmail size="12px" />
-            {personalData.mail}
+            {mail}
           </div>
         </div>
       </div>
       <div className="h-[5vh] bg-[#e7e8ea] flex justify-around gap-4">
         <div className="flex gap-1 items-center text-[black] cursor-pointer font-[400] text-[12px]">
           <FaGithubSquare size="18px" />
-          {personalData.github}
+          {github}
         </div>
         <div className="flex gap-1 items-center text-[black] cursor-pointer font-[400] text-[12px]">
           <FaLinkedin size="18px" />
-          {personalData.linkdin}
+          {linkdin}
         </div>
       </div>
       <div className="h-full  flex">
