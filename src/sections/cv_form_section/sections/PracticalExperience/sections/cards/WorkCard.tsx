@@ -86,7 +86,7 @@ export function WorkCard({
         />
         <StyledInputLarge
           placeholder="github"
-          {...register(`Github${id}`, { required: true })}
+          {...register(`github${id}`, { required: true })}
         />
         <StyledInput
           type="date"

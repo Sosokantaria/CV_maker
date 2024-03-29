@@ -32,6 +32,7 @@ export const Context = createContext<TpersonalInfoContextValue>({
       github: "",
       startDate: "",
       endDate: "",
+      index:0
     },
   ],
   skillData: [{ id: "", skill: "" }],

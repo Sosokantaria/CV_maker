@@ -50,6 +50,7 @@ export function ContentProvider({ children }: PropsWithChildren) {
       github: "",
       startDate: "",
       endDate: "",
+      index:0
     },
   ]);
   const [skillData, setSkillData] = useState<TSkillData>([

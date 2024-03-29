@@ -22,7 +22,7 @@ function App() {
     <FormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)}>
         <div className="bg-[#000] w-full h-[1152px] flex justify-around  ">
-          <div className="w-[35%] h-[852px] mt-[10px] flex">
+          <div className="w-[35%] h-full mt-[10px] flex">
             <CvFormSection />
           </div>
           <div ref={componentRef} className=" w-[803px] h-[1132px] my-[10px] rounded-lg ">

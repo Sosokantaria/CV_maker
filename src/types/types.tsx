@@ -23,6 +23,7 @@ export type TPersonalData = {
     schoolEnd: string;
   };
   export type TExperienceDataItem = {
+    index:number;
     company: string;
     position: string;
     occupation: string;
