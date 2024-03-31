@@ -21,7 +21,7 @@ npm install
 3. **Start the development server:**
 npm start
 
-4. **Open your browser and navigate to** `luminous-otter-2d673e.netlify.app` **to access the app.**
+4. **Open your browser and navigate to** `cv-pdf.netlify.app` **to access the app.**
 
 ## Usage
 1. Fill in each section of the CV by entering relevant information.
