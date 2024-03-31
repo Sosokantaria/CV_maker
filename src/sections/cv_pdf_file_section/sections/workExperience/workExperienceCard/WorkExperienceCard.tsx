@@ -16,7 +16,7 @@ export function WorkExperienceCard({
           WORK EXPERIENCE {index + 1}
         </h2>
         <p className="text-black  text-[12px] font-[600] flex gap-1">
-          {startDate} /{endDate ? <>{endDate}</> : <span>present</span>}
+          {startDate} /{endDate ? <span>{endDate}</span> : <span>present</span>}
         </p>
       </div>
 

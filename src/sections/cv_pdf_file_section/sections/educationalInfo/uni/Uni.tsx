@@ -15,7 +15,7 @@ export function UniFile({
         </h3>
         <div className="flex">
           <p className="text-black  text-[12px] font-[600] flex gap-1">
-            {uniStart} /{uniEnd ? <>{uniEnd}</> : <span>present</span>}
+            {uniStart} /{uniEnd ? <span>{uniEnd}</span> : <span>present</span>}
           </p>
         </div>
       </div>
