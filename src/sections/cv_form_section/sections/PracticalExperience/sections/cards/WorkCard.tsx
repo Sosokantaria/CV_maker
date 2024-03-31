@@ -96,7 +96,7 @@ export function WorkCard({
         <StyledInput
           type="date"
           placeholder="End Date of employment"
-          {...register(`endDate${id}`, { required: true })}
+          {...register(`endDate${id}`)}
         />
       </GridDiv>
     </>

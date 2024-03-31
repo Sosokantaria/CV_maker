@@ -96,7 +96,7 @@ export function UniCard({ id, index }: TUniDataItem) {
         <StyledInput
           type="date"
           placeholder="end"
-          {...register(`uniEnd${id}`, { required: true })}
+          {...register(`uniEnd${id}`)}
         />
       </GridDiv>
       {uniData.length < 3 && (

@@ -12,8 +12,8 @@ export function School() {
             <span className="text-[black]">{schoolData.school}</span>
           </span>
         </p>
-        <p>
-          {schoolData.schoolStart} / {schoolData.schoolEnd}
+        <p className="text-black  text-[12px] font-[600] flex gap-1">
+          {schoolData.schoolStart} /{schoolData.schoolEnd ? <>{schoolData.schoolEnd}</> : <span>present</span>}
         </p>
       </div>
       <p>

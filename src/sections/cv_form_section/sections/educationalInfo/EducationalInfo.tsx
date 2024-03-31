@@ -63,7 +63,7 @@ export function EducationalInfo() {
           <StyledInput
             type="date"
             placeholder="end"
-            {...register("schoolEnd", { required: true })}
+            {...register("schoolEnd")}
           />
         </GridDiv>
       </div>

@@ -1,6 +1,5 @@
 import { TUniDataItem } from "../../../../../types";
 
-
 export function UniFile({
   university,
   uniDegree,
@@ -15,8 +14,8 @@ export function UniFile({
           <p className="text-[12px] text-[black] font-[600]">{university}</p>
         </h3>
         <div className="flex">
-          <p className="text-[12px] text-[black] font-[600]">
-            {uniStart} / {uniEnd}
+          <p className="text-black  text-[12px] font-[600] flex gap-1">
+            {uniStart} /{uniEnd ? <>{uniEnd}</> : <span>present</span>}
           </p>
         </div>
       </div>
