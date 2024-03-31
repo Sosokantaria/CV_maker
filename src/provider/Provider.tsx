@@ -10,7 +10,6 @@ import {
 } from "../types";
 import uniqid from "uniqid";
 
-
 export function ContentProvider({ children }: PropsWithChildren) {
   const expId = uniqid();
   const skillId = uniqid();
@@ -24,6 +23,7 @@ export function ContentProvider({ children }: PropsWithChildren) {
     linkdin: "",
     mail: "",
     number: "",
+    profile: "",
   });
   const [uniData, setUniData] = useState<TUniData>([
     {
@@ -50,7 +50,7 @@ export function ContentProvider({ children }: PropsWithChildren) {
       github: "",
       startDate: "",
       endDate: "",
-      index:0
+      index: 0,
     },
   ]);
   const [skillData, setSkillData] = useState<TSkillData>([

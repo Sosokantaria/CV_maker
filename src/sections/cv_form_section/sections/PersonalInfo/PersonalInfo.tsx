@@ -20,17 +20,19 @@ export function PersonalInfo() {
     "linkdin",
     "mail",
     "number",
+    "profile",
   ]);
 
   useEffect(() => {
     const mappedData: TPersonalData = {
-      name: data[0] ,
-      lastName: data[1] ,
-      city: data[2] ,
-      github: data[3] ,
-      linkdin: data[4] ,
-      mail: data[5] ,
-      number: data[6] ,
+      name: data[0],
+      lastName: data[1],
+      city: data[2],
+      github: data[3],
+      linkdin: data[4],
+      mail: data[5],
+      number: data[6],
+      profile: data[7],
     };
     return setPersonalData(mappedData);
   }, [...data]);
@@ -42,11 +44,11 @@ export function PersonalInfo() {
         <H2Title>Personal Info</H2Title>
         <GridDiv>
           <StyledInput
-            placeholder="Soso"
+            placeholder="name"
             {...register(`name`, { required: true })}
           />
           <StyledInput
-            placeholder="Kantaria"
+            placeholder="lastname"
             {...register("lastname", { required: true })}
           />
           <StyledInputLarge
@@ -68,6 +70,11 @@ export function PersonalInfo() {
           <StyledInput
             placeholder="Phone"
             {...register("number", { required: true })}
+          />
+          <textarea rows={4} cols={50} maxLength={750}
+            className="bg-[#292929] rounded-[10px] w-full text-[#a6a6a6] h-[100px] font-sans text-[14px] font-[700] col-span-2 p-2 no-scrollbar "
+            placeholder="write about you in 150 words"
+            {...register("profile", { required: true })}
           />
         </GridDiv>
       </div>

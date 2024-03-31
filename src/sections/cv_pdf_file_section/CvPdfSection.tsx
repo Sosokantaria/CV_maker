@@ -11,16 +11,17 @@ import { EducationInfo } from "./sections/educationalInfo";
 
 export function CvPdfFileSection() {
   const { personalData } = useContext(Context);
-  const { name, lastName, city, number, mail, github, linkdin } = personalData;
+  const { name, lastName, city, number, mail, github, linkdin, profile } =
+    personalData;
   return (
     <div className="bg-[#fefefe] w-[803px] h-[1132px] rounded-lg flex flex-col">
-       <div className="flex flex-col h-[10vh] items-center w-full">
+      <div className="flex flex-col h-[10vh] items-center w-full">
         <div className=" text-black h-[6vh] flex items-center gap-2 ">
           <h1 className="text-[#2e2e2e] font-[700] text-[21px] tracking-[8px]">
-          {name ? name.toUpperCase() : ""}
+            {name ? name.toUpperCase() : ""}
           </h1>
           <h1 className="text-[#2e2e2e] font-[700] text-[21px] tracking-[8px]">
-          {lastName ? lastName.toUpperCase() : ""}
+            {lastName ? lastName.toUpperCase() : ""}
           </h1>
         </div>
         <div className="flex gap-3">
@@ -52,10 +53,17 @@ export function CvPdfFileSection() {
         <div className="bg-[#1c1c1c] h-full rounded-bl-lg w-[30%] flex flex-col justify-start items-start pt-[15px] px-[15px]">
           <div className="text-[#a6a6a6]   flex flex-col gap-[10px] justify-items-start ">
             <SkillsInfo />
-            <LanguagesInfo/>
+            <LanguagesInfo />
           </div>
         </div>
         <div className="bg-[#fff] text-black rounded-br-lg  h-full w-[70%] px-[15px]">
+          <h2 className="font-[500] text-[14px] pt-[10px] flex tracking-[4px] ">
+            PROFILE
+          </h2>
+          <div className="bg-[gray] h-[2px] w-[50px] rounded-lg" />
+          <h3 className="text-black  w-full font-[600] text-[12px]">
+            {profile}
+          </h3>
           <WorkExperienceInfo />
           <EducationInfo />
         </div>

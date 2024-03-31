@@ -6,7 +6,7 @@ import { PracticalExperience } from "./sections/PracticalExperience";
 
 export function CvFormSection() {
   return (
-    <div className="flex flex-col  w-full justify-start items-start overflow-y-scroll no-scrollbar gap-[35px] p-5 pt-0">
+    <div className="flex flex-col w-full justify-start items-start overflow-y-scroll no-scrollbar gap-[35px]  ">
       <HeadLineSection />
       <PersonalInfo />
       <EducationalInfo />

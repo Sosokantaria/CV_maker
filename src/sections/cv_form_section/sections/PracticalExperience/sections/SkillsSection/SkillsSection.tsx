@@ -32,7 +32,7 @@ export function SkillsSection() {
           setSkills={setSkillData}
         />
       ))}
-      {skillData.length < 32 && (
+      {skillData.length < 50 && (
         <StyledButton type="button" onClick={()=>addSkill()}>
           <AiOutlinePlus />
         </StyledButton>

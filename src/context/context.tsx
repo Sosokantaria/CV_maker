@@ -1,7 +1,6 @@
 import { createContext } from "react";
 import { TpersonalInfoContextValue } from "../types";
 
-
 export const Context = createContext<TpersonalInfoContextValue>({
   personalData: {
     name: "",
@@ -11,6 +10,7 @@ export const Context = createContext<TpersonalInfoContextValue>({
     linkdin: "",
     mail: "",
     number: "",
+    profile: "",
   },
   uniData: [
     {
@@ -32,7 +32,7 @@ export const Context = createContext<TpersonalInfoContextValue>({
       github: "",
       startDate: "",
       endDate: "",
-      index:0
+      index: 0,
     },
   ],
   skillData: [{ id: "", skill: "" }],
